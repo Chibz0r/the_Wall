@@ -1,0 +1,112 @@
+// Global styling for this template
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  @include body-font;
+  padding-top: 54px;
+  color: $gray-700;
+  background-color: #ebd5b3;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 400;
+  color: $gray-800;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+	p {
+		line-height: 2em !important;
+	}
+}
+
+#greatyarmouth {
+	@include heading-font;
+}
+
+#wall {
+	background-image: url("../img/header-bg-mobile.jpg");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	color: $gray-400 !important;
+	
+	h1 {
+		color: #ebd5b3 !important;
+	}
+}
+
+@media (min-width: 768px) {
+	#wall {
+		background-position: center center !important;
+	}
+}
+
+#front-text {
+	color: $white;
+	font-size: 0.85em;	
+}
+
+#contact {
+	form {
+		max-width: 80%;
+	}
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.35rem;
+}
+
+.list-social-icons {
+  a {
+    color: $gray-700;
+    &:hover {
+      color: $primary;
+    }
+    .fa-lg {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.list-icons {
+  font-size: 3rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+    }
+  }
+}

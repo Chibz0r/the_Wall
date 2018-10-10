@@ -1,0 +1,21 @@
+.bg-primary {
+  background-color: $black !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-muted {
+  font-size: 0.95em !important;
+  color: $gray-700 !important;
+}
+
+a {
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+  }
+}
