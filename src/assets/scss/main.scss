@@ -73,8 +73,7 @@
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent1, bg) !important;
-			text-decoration: none;
+			text-decoration: underline;
 		}
 	}
 
@@ -256,7 +255,8 @@
 	label {
 		color: _palette(fg-bold);
 		display: block;
-		font-size: 0.9em;
+		font-family: Morpheus, serif;
+		font-size: 1.1em;
 		font-weight: _font(weight-bold);
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
@@ -593,6 +593,18 @@
 			text-transform: uppercase;
 			li {
 				padding-top: 1em;
+
+				a {
+					@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
+					color: _palette(accent1, fg);
+					text-decoration: none;
+
+					&:hover {
+						border-bottom-color: transparent;
+						color: _palette(accent1, fg-bold) !important;
+					}
+				}
+
 			}
 		}
 

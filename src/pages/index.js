@@ -131,9 +131,18 @@ class HomeIndex extends React.Component {
                             <div className="12u 12u$(small)">
                                 <form method="post" action="#">
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div className="6u 12u$(xsmall)">
+                                          <label for="name">Name</label>
+                                          <input type="text" name="name" id="name" placeholder="Who are you" />
+                                        </div>
+                                        <div className="6u 12u$(xsmall)">
+                                          <label for="email">Email</label>
+                                          <input type="email" name="email" id="email" placeholder="Where to reply to you" />
+                                        </div>
+                                        <div className="12u">
+                                          <label for="message">Message</label>
+                                          <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
+                                        </div>
                                     </div>
                                 </form>
                                 <ul className="actions">

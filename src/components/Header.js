@@ -10,7 +10,7 @@ class Header extends React.Component {
                 <div className="inner align-center">
                     <div className="avatar"><img src={avatar} alt="" /></div>
                     <h1><strong>The Great Wall of Yarmouth</strong></h1>
-                    <ul className="sidemenu">
+                    <ul className="sidemenu nav-links">
                       <li><a href="#Introduction">Introduction</a></li>
                       <li><a href="#Look">A Look Inside</a></li>
                       <li><a href="#Buy">Buy the Book</a></li>
