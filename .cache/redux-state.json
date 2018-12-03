@@ -523,7 +523,7 @@
       "resolve": "/Users/nathangriffen/Documents/GitHub/the_Wall",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "56842d1abe3b8ff4c9ae612f94e18649",
+      "version": "b59496ae34e96db71e83113f577af127",
       "pluginOptions": {
         "plugins": []
       },
@@ -595,7 +595,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ed667ec01293619f6387c7e339c8db28",
+        "contentDigest": "b7f2a899161c0940bdca4f39cff07720",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -708,12 +708,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-11-15T16:25:34.392Z",
+      "buildTime": "2018-11-22T16:38:12.837Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f90e74c38fde5f8d4b03db46c66abfaf",
+        "contentDigest": "c029d8be4146cc1756c66f3ffb233e68",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -801,7 +801,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "877ef484c6b66f964b5f4149eda28a51"
+    "PLUGINS_HASH": "4689b73edd209de1098315b8608be493"
   },
   "componentDataDependencies": {
     "nodes": {},
@@ -815,10 +815,6 @@
     "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
-    "/Users/nathangriffen/Documents/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js": {
-      "query": "",
-      "componentPath": "/Users/nathangriffen/Documents/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js"
-    },
     "/Users/nathangriffen/Documents/GitHub/the_Wall/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/Documents/GitHub/the_Wall/src/pages/404.js"
@@ -826,6 +822,10 @@
     "/Users/nathangriffen/Documents/GitHub/the_Wall/src/pages/index.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/Documents/GitHub/the_Wall/src/pages/index.js"
+    },
+    "/Users/nathangriffen/Documents/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/Users/nathangriffen/Documents/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js"
     }
   },
   "staticQueryComponents": {}

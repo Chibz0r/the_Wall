@@ -68,7 +68,6 @@
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
 		color: _palette(accent1, bg);
 		text-decoration: none;
 
@@ -205,7 +204,6 @@
 /* Section/Article */
 
 	section {
-		height: 100vh;
 		min-height: 100%;
 	}
 
@@ -569,10 +567,10 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
+		padding-left: 0;
 
 		li {
-			padding-left: 0.5em;
+			padding-left: 0;
 		}
 
 		&.alt {
@@ -922,9 +920,9 @@
 		color: _palette(accent2, fg);
 		height: 100%;
 		left: 0;
-		padding: ($size-header-pad * 2) $size-header-pad;
+		padding: ($size-header-pad * 2) $size-header-pad ($size-header-pad * 0.2) $size-header-pad;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
 		width: $size-header-width;
 
@@ -1213,7 +1211,7 @@
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+				padding: ($size-header-pad * 2) $size-header-pad ($size-header-pad * 0.2) $size-header-pad;
 				width: $size-header-width;
 
 				h1 {

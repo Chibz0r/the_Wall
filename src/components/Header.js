@@ -11,10 +11,10 @@ class Header extends React.Component {
                     <div className="avatar"><img src={avatar} alt="" /></div>
                     <h1><strong>The Great Wall of Yarmouth</strong></h1>
                     <ul className="sidemenu">
-                      <li>Introduction</li>
-                      <li>A Look Inside</li>
-                      <li>Buy the Book</li>
-                      <li>Message the Author</li>
+                      <li><a href="#Introduction">Introduction</a></li>
+                      <li><a href="#Look">A Look Inside</a></li>
+                      <li><a href="#Buy">Buy the Book</a></li>
+                      <li><a href="#Message">Message the Author</a></li>
                     </ul>
                 </div>
                 <Footer />

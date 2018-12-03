@@ -6,7 +6,7 @@ class Footer extends React.Component {
             <footer id="footer">
                 <div className="inner">
                     <ul className="copyright">
-                        <li>written and illustrated by Paul Patterson &copy; 2018</li>
+                        <li>written and illustrated by Paul Patterson</li>
                     </ul>
                 </div>
             </footer>

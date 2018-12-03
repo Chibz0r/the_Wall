@@ -102,17 +102,18 @@ class HomeIndex extends React.Component {
                         <p>This book attempts to illustrate the importance of what remains, and why it should be preserved.</p>
                     </section>
 
-                    <section id="Take a Look">
+                    <section id="Look">
                         <h2>Take a Look Inside</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, alt }) => ({
                             src,
-                            thumbnail
+                            thumbnail,
+                            alt
                         }))} />
 
                     </section>
 
-                    <section id="Buy the Book">
+                    <section id="Buy">
                         <h2>Buy the Book</h2>
                         <div className="row">
                             <div className="6u">
@@ -124,7 +125,7 @@ class HomeIndex extends React.Component {
                         </div>
                     </section>
 
-                    <section id="Message the Author">
+                    <section id="Message">
                         <h2>Message the Author</h2>
                         <div className="row">
                             <div className="12u 12u$(small)">
