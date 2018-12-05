@@ -184,19 +184,24 @@ class HomeIndex extends React.Component {
                                 <form name="message-the-author" method="POST" netlify>
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
-                                          <label for="name">Name</label>
-                                          <input type="text" name="name" id="name" placeholder="Who are you" />
+                                        <p>
+                                          <label for="name">Name <input type="text" name="name" id="name" placeholder="Who are you" /></label>
+                                        </p>
                                         </div>
                                         <div className="6u 12u$(xsmall)">
-                                          <label for="email">Email</label>
-                                          <input type="email" name="email" id="email" placeholder="Where to reply to you" />
+                                        <p>
+                                          <label for="email">Email <input type="email" name="email" id="email" placeholder="Where to reply to you" /></label>
+                                        </p>
                                         </div>
                                         <div className="12u">
-                                          <label for="message">Message</label>
-                                          <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
+                                        <p>
+                                          <label for="message">Message <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea></label>
+                                        </p>
                                         </div>
                                         <div>
+                                        <p>
                                           <button className="button" type="submit">Send Message</button>
+                                        </p>
                                         </div>
                                     </div>
                                 </form>
