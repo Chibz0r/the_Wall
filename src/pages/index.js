@@ -185,15 +185,15 @@ class HomeIndex extends React.Component {
                                     <input type="hidden" name="bot-field" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
-                                          <label for="name">Name</label>
+                                          <label htmlfor="name">Name</label>
                                           <input type="text" name="name" id="name" placeholder="Who are you" />
                                         </div>
                                         <div className="6u 12u$(xsmall)">
-                                          <label for="email">Email</label>
+                                          <label htmlfor="email">Email</label>
                                           <input type="email" name="email" id="email" placeholder="Where to reply to you" />
                                         </div>
                                         <div className="12u">
-                                          <label for="message">Message</label>
+                                          <label htmlor="message">Message</label>
                                           <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
                                         </div>
                                         <ul className="actions">
