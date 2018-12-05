@@ -181,29 +181,26 @@ class HomeIndex extends React.Component {
                         <h2>Message the Author</h2>
                         <div className="row">
                             <div className="12u 12u$(small)">
-                                <form name="message-the-author" method="POST" netlify>
+                                <form name="message-the-author" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <input type="hidden" name="bot-field" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
-                                        <p>
-                                          <label for="name">Name <input type="text" name="name" id="name" placeholder="Who are you" /></label>
-                                        </p>
+                                          <label for="name">Name</label>
+                                          <input type="text" name="name" id="name" placeholder="Who are you" />
                                         </div>
                                         <div className="6u 12u$(xsmall)">
-                                        <p>
-                                          <label for="email">Email <input type="email" name="email" id="email" placeholder="Where to reply to you" /></label>
-                                        </p>
+                                          <label for="email">Email</label>
+                                          <input type="email" name="email" id="email" placeholder="Where to reply to you" />
                                         </div>
                                         <div className="12u">
-                                        <p>
-                                          <label for="message">Message <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea></label>
-                                        </p>
+                                          <label for="message">Message</label>
+                                          <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
                                         </div>
-                                        <div>
-                                        <p>
-                                          <button className="button" type="submit">Send Message</button>
-                                        </p>
-                                        </div>
+                                        <ul className="actions">
+                                            <li><input type="submit" value="Send Message" /></li>
+                                        </ul>
                                     </div>
+
                                 </form>
                                 <p className="align-right">or you can email <a href="mailto:paul@atecdesign.co.uk">paul@atecdesign.co.uk</a></p>
                             </div>
