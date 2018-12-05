@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
+// volume 1 images
 import thumb01 from '../assets/images/thumbs/northgate.jpg'
 import thumb02 from '../assets/images/thumbs/chapter.jpg'
 import thumb03 from '../assets/images/thumbs/cottonmap.jpg'
@@ -19,7 +20,27 @@ import full04 from '../assets/images/fulls/moat.jpg'
 import full05 from '../assets/images/fulls/market.jpg'
 import full06 from '../assets/images/fulls/kings.jpg'
 
-const DEFAULT_IMAGES = [
+/*
+//volume 2 images
+import thumb07 from '..assets/images/thumbs/ '
+
+import full07 from  '..assets/images/fulls/ '
+*/
+
+import bookCovers from '../assets/images/book-covers.png'
+import bookCovervol1 from '../assets/images/volume-1.png'
+import bookCovervol2 from '../assets/images/volume-2.png'
+
+const VOLUME1 = [
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image1'},
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image2'},
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image3'},
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image4'},
+    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image5'},
+    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image6'}
+];
+
+const VOLUME2 = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image1'},
     { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image2'},
     { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image3'},
@@ -88,28 +109,56 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <section id="zero">
-
+                        <div className="row">
+                            <div className="8u 12u$(xsmall)">
+                                <img src={bookCovers} alt="great wall of yarmouth book cover" />
+                            </div>
+                            <div className="4u 12u$(xsmall)">
+                                <p>190 pages containing facts about the medieval wall of Yarmouth.</p>
+                                <p>Including never before seen illustrations of how the wall and gates looked, and how they would appear today had they survived.</p>
+                                <p>Written and illustrated by Paul B. Patterson</p>
+                            </div>                          
+                        </div>
                     </section>
 
                     <section id="Introduction">
                         <header className="major">
                             <h2>Introduction</h2>
                         </header>
-                        <p><strong>This Wall</strong></p>
-                        <p>As it stands today, to many it may appear as just the remains of an old wall.</p>
-                        <p>In terms of cost, labour and time, it is the biggest undertaking Great Yarmouth has, and will ever, endure.</p>
-                        <p>After surviving around 700 years, today its greatest enemy is ignorance of its compelling history.</p>
-                        <p>This book attempts to illustrate the importance of what remains, and why it should be preserved.</p>
+                        <div className="row">
+                        <div className="6u 12u$(xsmall)">
+                            <h3>Volume 1 - Murage</h3>
+                            <p><strong>This Wall</strong></p>
+                            <p>As it stands today, to many it may appear as just the remains of an old wall.</p>
+                            <p>In terms of cost, labour and time, it is the biggest undertaking Great Yarmouth has, and will ever, endure.</p>
+                            <p>After surviving around 700 years, today its greatest enemy is ignorance of its compelling history.</p>
+                            <p>This book attempts to illustrate the importance of what remains, and why it should be preserved.</p>
+                        </div>
+                        <div className="6u 12u$(xsmall)">
+                            <h3>Volume 2 - Mumorum Operatio</h3>
+                            <p>The full story of the wall, its effect over the town, and how the town evolved.
+                            Less than three centuries ago, Great Yarmouth was still a fortified town.
+                            Its wall almost complete with its towers, and most of the gates still standing.</p>
+
+                            <p>By 1850 all the gates had gone.
+                            <br />Great Yarmouth suffered immensely during the bombing raids in World War II, massive areas of the town’s important medieval past was lost.
+                            From 1950’s to the 1970’s thoughtless planning to restructure the town and roads paradoxically damaged important areas, which had survived time and war.
+                            Despite these huge losses in a relatively short time, Great Yarmouth is still recognised as one of England’s most interesting medieval towns.
+                            In defiance of all these losses, Great Yarmouth still proudly contains some of the country’s most interesting buildings and structures.</p>
+
+                            <p>This book attempts to illustrate the importance of what remains, and why they should be preserved.</p>
+                        </div>
+                        </div>
                     </section>
 
                     <section id="Look">
                         <h2>Take a Look Inside</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, alt }) => ({
+                        <Gallery images={VOLUME1.map(({ id, src, thumbnail, caption, description, alt }) => ({
                             src,
                             thumbnail,
                             alt
-                        }))} />
+                        }))} />                        
 
                     </section>
 
@@ -117,9 +166,11 @@ class HomeIndex extends React.Component {
                         <h2>Buy the Book</h2>
                         <div className="row">
                             <div className="6u">
+                                <img src={bookCovervol1} alt="book cover" />
                                 <p>Details about book</p>
                             </div>
                             <div className="6u">
+                                <img src={bookCovervol2} alt="book cover" />
                                 <p>Details about book 2</p>
                             </div>
                         </div>
@@ -129,7 +180,7 @@ class HomeIndex extends React.Component {
                         <h2>Message the Author</h2>
                         <div className="row">
                             <div className="12u 12u$(small)">
-                                <form method="post" action="#">
+                                <form name="message-the-author" method="POST" netlify>
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">
                                           <label for="name">Name</label>

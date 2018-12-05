@@ -723,12 +723,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-03T16:33:11.049Z",
+      "buildTime": "2018-12-05T15:15:32.086Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "434e8731e59a43d49db7d2eb4cd483dc",
+        "contentDigest": "566c27f52c0853e2f37214beb0277d9c",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
