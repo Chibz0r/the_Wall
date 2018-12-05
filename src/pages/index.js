@@ -196,9 +196,7 @@ class HomeIndex extends React.Component {
                                           <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <ul className="actions">
-                                                <li><input type="submit" value="Send Message" /></li>
-                                            </ul>
+                                          <button className="button" type="submit">Send Message</button>
                                         </div>
                                     </div>
                                 </form>
