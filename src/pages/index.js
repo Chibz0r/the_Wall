@@ -40,6 +40,7 @@ const VOLUME1 = [
     { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image6'}
 ];
 
+// eslint-disable-next-line
 const VOLUME2 = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image1'},
     { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image2'},
@@ -194,11 +195,13 @@ class HomeIndex extends React.Component {
                                           <label for="message">Message</label>
                                           <textarea name="message" id="message" placeholder="What is your message..." rows="4"></textarea>
                                         </div>
+                                        <div>
+                                            <ul className="actions">
+                                                <li><input type="submit" value="Send Message" /></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
                                 <p className="align-right">or you can email <a href="mailto:paul@atecdesign.co.uk">paul@atecdesign.co.uk</a></p>
                             </div>
                         </div>
