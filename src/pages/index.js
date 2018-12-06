@@ -20,34 +20,43 @@ import full04 from '../assets/images/fulls/moat.jpg'
 import full05 from '../assets/images/fulls/market.jpg'
 import full06 from '../assets/images/fulls/kings.jpg'
 
-/*
-//volume 2 images
-import thumb07 from '..assets/images/thumbs/ '
 
-import full07 from  '..assets/images/fulls/ '
-*/
+//volume 2 images
+import thumb07 from '../assets/images/thumbs/vol2-monarch.jpg'
+import thumb08 from '../assets/images/thumbs/vol2-planning.jpg'
+import thumb09 from '../assets/images/thumbs/vol2-rows.jpg'
+import thumb10 from '../assets/images/thumbs/vol2-bachelors.jpg'
+import thumb11 from '../assets/images/thumbs/vol2-friars.jpg'
+import thumb12 from '../assets/images/thumbs/vol2-castle.jpg'
+
+import full07 from  '../assets/images/fulls/vol2-monarch.jpg'
+import full08 from  '../assets/images/fulls/vol2-planning.jpg'
+import full09 from  '../assets/images/fulls/vol2-rows.jpg'
+import full10 from  '../assets/images/fulls/vol2-bachelors.jpg'
+import full11 from  '../assets/images/fulls/vol2-friars.jpg'
+import full12 from  '../assets/images/fulls/vol2-castle.jpg'
 
 import bookCovers from '../assets/images/book-covers.png'
 import bookCovervol1 from '../assets/images/volume-1.png'
 import bookCovervol2 from '../assets/images/volume-2.png'
 
 const VOLUME1 = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image1'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image2'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image3'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image4'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image5'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image6'}
+    { id: '1', src: full01, thumbnail: thumb01, alt: 'nortgate'},
+    { id: '2', src: full02, thumbnail: thumb02, alt: 'chapter'},
+    { id: '3', src: full03, thumbnail: thumb03, alt: 'cottonmap'},
+    { id: '4', src: full04, thumbnail: thumb04, alt: 'moat'},
+    { id: '5', src: full05, thumbnail: thumb05, alt: 'market'},
+    { id: '6', src: full06, thumbnail: thumb06, alt: 'kings'}
 ];
 
-// eslint-disable-next-line
+
 const VOLUME2 = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image1'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image2'},
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image3'},
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image4'},
-    { id: '5', src: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image5'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', alt: 'image6'}
+    { id: '1', src: full07, thumbnail: thumb07, alt: 'monarch'},
+    { id: '2', src: full08, thumbnail: thumb08, alt: 'planning'},
+    { id: '3', src: full09, thumbnail: thumb09, alt: 'rows'},
+    { id: '4', src: full10, thumbnail: thumb10, alt: 'bachelors'},
+    { id: '5', src: full11, thumbnail: thumb11, alt: 'friars'},
+    { id: '6', src: full12, thumbnail: thumb12, alt: 'image6'}
 ];
 
 class HomeIndex extends React.Component {
@@ -153,14 +162,25 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="Look">
-                        <h2>Take a Look Inside</h2>
-
-                        <Gallery images={VOLUME1.map(({ id, src, thumbnail, caption, description, alt }) => ({
-                            src,
-                            thumbnail,
-                            alt
-                        }))} />                        
-
+                    <h2>Take a Look Inside</h2>
+                    <div className="row">
+                        <div className="6u 12u$(xsmall)">
+                        <h3>Volume 1</h3>
+                            <Gallery images={VOLUME1.map(({ id, src, thumbnail, alt }) => ({
+                                src,
+                                thumbnail,
+                                alt
+                            }))} />                        
+                        </div>
+                        <div className="6u 12u$(xsmall)">
+                        <h3>Volume 2</h3>
+                            <Gallery images={VOLUME2.map(({ id, src, thumbnail, alt }) => ({
+                                src,
+                                thumbnail,
+                                alt
+                            }))} />                        
+                        </div>
+                    </div>
                     </section>
 
                     <section id="Buy">
@@ -168,11 +188,40 @@ class HomeIndex extends React.Component {
                         <div className="row">
                             <div className="6u">
                                 <img src={bookCovervol1} alt="book cover" />
-                                <p>Details about book</p>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick" />
+                                    <input type="hidden" name="hosted_button_id" value="ZSU37WL3CX3F6" />
+
+                                    <input type="hidden" name="on0" value="Delivery" />Please select delivery option:
+                                    <select name="os0">
+                                        <option value="Royal Mail 1st Class">Royal Mail 1st Class £22.95</option>
+                                        <option value="Royal Mail Signed For">Royal Mail Signed For £23.95</option>
+                                        <option value="Collect in Person">Collect in Person £19.95</option>
+                                    </select>
+                                    <input type="hidden" name="currency_code" value="GBP" />
+                                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                                    </form>                            
                             </div>
                             <div className="6u">
                                 <img src={bookCovervol2} alt="book cover" />
-                                <p>Details about book 2</p>
+                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                    <input type="hidden" name="cmd" value="_s-xclick" />
+                                    <input type="hidden" name="hosted_button_id" value="HDB3KLVBS8NBL" />
+
+                                    <input type="hidden" name="on0" value="Delivery" />Please select delivery option:
+                                    <select name="os0">
+                                        <option value="Royal Mail 1st Class">Royal Mail 1st Class £22.95</option>
+                                        <option value="Royal Mail Signed For">Royal Mail Signed For £23.95</option>
+                                        <option value="Collect in Person">Collect in Person £19.95</option>
+                                    </select>
+                                    <input type="hidden" name="currency_code" value="GBP" />
+                                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!" />
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+                                    </form>
+                            </div>
+                            <div className="12u">
+                                <p className="align-right"><em>Internation postage availble upon request please email <a href="mailto:paul@atecdesign.co.uk">paul@atecdesign.co.uk</a></em></p>
                             </div>
                         </div>
                     </section>
@@ -181,7 +230,7 @@ class HomeIndex extends React.Component {
                         <h2>Message the Author</h2>
                         <div className="row">
                             <div className="12u 12u$(small)">
-                                <form name="message-the-author" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                <form name="message-the-author" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                                     <input type="hidden" name="bot-field" />
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)">

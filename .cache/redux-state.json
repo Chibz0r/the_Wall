@@ -803,6 +803,26 @@
         "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /success/": {
+      "jsonName": "success-ca5",
+      "internalComponentName": "ComponentSuccess",
+      "path": "/success/",
+      "component": "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js",
+      "componentChunkName": "component---src-pages-success-js",
+      "context": {},
+      "pluginCreator___NODE": "52253315-70b1-557d-b4e6-999c13a5d87b",
+      "pluginCreatorId": "52253315-70b1-557d-b4e6-999c13a5d87b",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js",
+      "id": "SitePage /success/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3b662c5246db13b0c7f7c7bd29e86285",
+        "description": "52253315-70b1-557d-b4e6-999c13a5d87b",
+        "owner": "internal-data-bridge"
+      }
     }
   },
   "status": {
@@ -818,7 +838,8 @@
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E"
+    "offline-plugin-app-shell-fallback-a30": "520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E",
+    "success-ca5": "398/path---success-ca-5-7fb-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js": {
@@ -832,6 +853,10 @@
     "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js"
+    },
+    "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js": {
+      "query": "",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js"
     }
   },
   "staticQueryComponents": {}

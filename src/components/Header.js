@@ -8,7 +8,7 @@ class Header extends React.Component {
         return (
             <header id="header">
                 <div className="inner align-center">
-                    <div className="avatar"><img src={avatar} alt="" /></div>
+                    <div className="avatar"><img src={avatar} alt="great yarmouth shield" /></div>
                     <h1><strong>The Great Wall of Yarmouth</strong></h1>
                     <ul className="sidemenu nav-links">
                       <li><a href="#Introduction">Introduction</a></li>
