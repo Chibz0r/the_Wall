@@ -11,7 +11,7 @@ const Success = (props) => (
 
 		<div id="main">
 			<section id="success">
-				<div className="inner">
+				<div>
                     <header className="major">
                         <h1>Thank you!</h1>
                     </header>
