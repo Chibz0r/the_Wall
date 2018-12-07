@@ -217,16 +217,23 @@
 			background-position: center;
 			background-size: 100%;
 
+			h5 {
+			color: _palette(accent1, fg-bold);
+			padding-left: 3em;
+			}
+
 			p {
+				color: _palette(accent1, fg-bold);
+				padding-left: 3em;
 				font-family: Open Sans,serif;
 				font-style: italic;
 				font-size: 1.1em;
-				color: _palette(accent1, fg-bold);
+				margin-bottom: 0.8em;
 			}
 
 			img {
-				width: 100%;
-				padding-top: 3em;
+				width: 55%;
+				padding-top: 4em;
 			}
 
 		}

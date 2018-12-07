@@ -119,16 +119,27 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <section id="zero">
-                        <div className="row">
-                            <div className="8u 12u$(xsmall)">
-                                <img src={bookCovers} alt="great wall of yarmouth book cover" />
-                            </div>
-                            <div className="4u 12u$(xsmall)">
-                                <p>190 pages containing facts about the medieval wall of Yarmouth.</p>
-                                <p>Including never before seen illustrations of how the wall and gates looked, and how they would appear today had they survived.</p>
-                                <p>Written and illustrated by Paul B. Patterson</p>
-                            </div>                          
+                    <div className="row">
+                        <div className="6u">
+                            <h5>Volume I</h5>
+                            <p>190 pages containing facts about the medieval wall of Yarmouth.</p>
+                            <p>Including never before seen illustrations of how the wall and gates looked, and how they would appear today had they survived.</p>
+                            <p>This book attempts to illustrate the importance of what remains, and why it should be preserved.</p>
                         </div>
+                        <div className="6u">
+                            <h5>Volume II</h5>
+                            <p>The full story of the wall, its effect over the town, and how the town evolved.
+                            Less than three centuries ago, Great Yarmouth was still a fortified town.
+                            Its wall almost complete with its towers, and most of the gates still standing.</p>
+                            <p>This book attempts to illustrate the importance of what remains, and why they should be preserved.</p>
+                        </div>
+                        <div className="12u align-right">
+                            <h5>Written and illustrated by Paul B. Patterson</h5>
+                        </div>
+                        <div className="12u align-right">
+                            <img src={bookCovers} alt="great wall of yarmouth book cover" />
+                        </div>
+                    </div>
                     </section>
 
                     <section id="Introduction">
@@ -155,7 +166,6 @@ class HomeIndex extends React.Component {
                             From 1950’s to the 1970’s thoughtless planning to restructure the town and roads paradoxically damaged important areas, which had survived time and war.
                             Despite these huge losses in a relatively short time, Great Yarmouth is still recognised as one of England’s most interesting medieval towns.
                             In defiance of all these losses, Great Yarmouth still proudly contains some of the country’s most interesting buildings and structures.</p>
-
                             <p>This book attempts to illustrate the importance of what remains, and why they should be preserved.</p>
                         </div>
                         </div>

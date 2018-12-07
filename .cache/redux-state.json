@@ -281,18 +281,16 @@
         "owner": "internal-data-bridge"
       }
     },
-    "01cef027-1460-50a3-82c8-62b5488c64c5": {
+    "bdc97068-2152-56fc-9062-2394373c9c46": {
       "resolve": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-manifest",
-      "id": "01cef027-1460-50a3-82c8-62b5488c64c5",
+      "id": "bdc97068-2152-56fc-9062-2394373c9c46",
       "name": "gatsby-plugin-manifest",
       "version": "2.0.9",
       "pluginOptions": {
         "plugins": [],
-        "name": "gatsby-starter-default",
-        "short_name": "starter",
+        "name": "great-wall-of-yarmouth",
+        "short_name": "Great wall",
         "start_url": "/",
-        "background_color": "#663399",
-        "theme_color": "#663399",
         "display": "minimal-ui",
         "icon": "src/assets/images/website-icon.png"
       },
@@ -367,7 +365,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f49b0f4e7a2d812ab565da2b20c403af",
+        "contentDigest": "0bb89b16b5d11c4dab823bec496f0c74",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -544,7 +542,7 @@
       "resolve": "/Users/nathangriffen/GitHub/the_Wall",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "b59496ae34e96db71e83113f577af127",
+      "version": "9ca732ef6116645d435b06aef56e28be",
       "pluginOptions": {
         "plugins": []
       },
@@ -616,7 +614,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6f95d5785d200cd00530c322bd59bd19",
+        "contentDigest": "f02f74838aa7a6ab812ec64bd285a2f8",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -732,12 +730,14 @@
       },
       "port": "8000",
       "host": "localhost",
-      "buildTime": "2018-12-05T15:35:38.882Z",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-12-07T12:55:14.665Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "aa1b628ca8ba8196c43df4df5046eeeb",
+        "contentDigest": "ec53922300694a5ac9cc8b07edef8ca9",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -782,26 +782,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /404.html": {
-      "jsonName": "404-html-516",
-      "internalComponentName": "Component404Html",
-      "path": "/404.html",
-      "component": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js",
-      "id": "SitePage /404.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "013011eda0a3dfa5dbb90d58a88ecffc",
-        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
-        "owner": "internal-data-bridge"
-      }
-    },
     "SitePage /success/": {
       "jsonName": "success-ca5",
       "internalComponentName": "ComponentSuccess",
@@ -821,11 +801,31 @@
         "description": "52253315-70b1-557d-b4e6-999c13a5d87b",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "013011eda0a3dfa5dbb90d58a88ecffc",
+        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+        "owner": "internal-data-bridge"
+      }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "db562713bbe1a4098ea37c68895e9dc1"
+    "PLUGINS_HASH": "c1e8c6f8b0aeee60abd075e24119ae30"
   },
   "componentDataDependencies": {
     "nodes": {},
@@ -840,6 +840,10 @@
     "success-ca5": "398/path---success-ca-5-7fb-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
+    "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js"
+    },
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js"
@@ -847,10 +851,6 @@
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/index.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/index.js"
-    },
-    "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js": {
-      "query": "",
-      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js"
     },
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js": {
       "query": "",
