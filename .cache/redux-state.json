@@ -281,9 +281,9 @@
         "owner": "internal-data-bridge"
       }
     },
-    "bdc97068-2152-56fc-9062-2394373c9c46": {
+    "6f1ad941-cde7-5073-bc3e-dad51ef6b629": {
       "resolve": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-manifest",
-      "id": "bdc97068-2152-56fc-9062-2394373c9c46",
+      "id": "6f1ad941-cde7-5073-bc3e-dad51ef6b629",
       "name": "gatsby-plugin-manifest",
       "version": "2.0.9",
       "pluginOptions": {
@@ -291,6 +291,8 @@
         "name": "great-wall-of-yarmouth",
         "short_name": "Great wall",
         "start_url": "/",
+        "background_color": "#1f1815",
+        "theme_color": "#1f1815",
         "display": "minimal-ui",
         "icon": "src/assets/images/website-icon.png"
       },
@@ -365,7 +367,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0bb89b16b5d11c4dab823bec496f0c74",
+        "contentDigest": "f9df7b56aeb597a88c98ddbfb8aea5a7",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -542,7 +544,7 @@
       "resolve": "/Users/nathangriffen/GitHub/the_Wall",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "9ca732ef6116645d435b06aef56e28be",
+      "version": "c2bfc045802187a46649490e6b7c94d0",
       "pluginOptions": {
         "plugins": []
       },
@@ -614,7 +616,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f02f74838aa7a6ab812ec64bd285a2f8",
+        "contentDigest": "556e784fd4411d042a88ead25c5a8248",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -732,12 +734,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-07T12:55:14.665Z",
+      "buildTime": "2018-12-07T14:51:07.454Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ec53922300694a5ac9cc8b07edef8ca9",
+        "contentDigest": "acd96e5ed93a6ded2d3f1f5414d99960",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -825,7 +827,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "c1e8c6f8b0aeee60abd075e24119ae30"
+    "PLUGINS_HASH": "ebc4358f3c0530f1490b8a1fe28d0f81"
   },
   "componentDataDependencies": {
     "nodes": {},
