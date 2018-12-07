@@ -12,6 +12,8 @@ module.exports = {
         name: 'great-wall-of-yarmouth',
         short_name: 'Great wall',
         start_url: '/',
+        background_color: '#1f1815',
+        theme_color: '#1f1815'
         display: 'minimal-ui',
         icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
