@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-7394297-18","head":false,"anonymize":true,"respectDNT":true},
+    },{
       plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{

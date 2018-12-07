@@ -5,6 +5,16 @@ module.exports = {
     description: "The Great Wall of Yarmouth written and illustrated by Paul Patterson"
   },
   plugins: [
+    'gatsby-plugin-google-analytics',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-7394297-18",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -19,6 +29,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',  
   ],
 }

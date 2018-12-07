@@ -1,22 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "jsonName": "dev-404-page-5f9",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c9ace439f23049b1284c2b14ccc870cf",
-        "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -192,6 +183,154 @@
       "children": [],
       "internal": {
         "contentDigest": "4b46e20a2f48d3970aa0232872076275",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "8ed0a9d1-e14d-58f8-a87e-18a893add33a": {
+      "resolve": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics",
+      "id": "8ed0a9d1-e14d-58f8-a87e-18a893add33a",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.8",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "4dc6257bca9756596ba74e332020da4b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "5f0c08e3-51ff-56a9-97c1-f5797470163d": {
+      "resolve": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics",
+      "id": "5f0c08e3-51ff-56a9-97c1-f5797470163d",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.8",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "UA-7394297-18",
+        "head": false,
+        "anonymize": true,
+        "respectDNT": true
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.8",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.3"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ab7d2ea6a9000fd434a8eb94fd16bc6e",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -544,7 +683,7 @@
       "resolve": "/Users/nathangriffen/GitHub/the_Wall",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "c2bfc045802187a46649490e6b7c94d0",
+      "version": "a69529b00cf7a9913e8f08b60d640d8d",
       "pluginOptions": {
         "plugins": []
       },
@@ -605,6 +744,10 @@
         ],
         "devDependencies": [
           {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^2.0.8"
+          },
+          {
             "name": "prettier",
             "version": "^1.14.2"
           }
@@ -616,7 +759,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "556e784fd4411d042a88ead25c5a8248",
+        "contentDigest": "e868709b698292cc60f6d6a5b18e1efe",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -730,17 +873,35 @@
         "author": "nathanGriffen",
         "description": "The Great Wall of Yarmouth written and illustrated by Paul Patterson"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-12-07T14:51:07.454Z",
+      "buildTime": "2018-12-07T15:06:32.795Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "acd96e5ed93a6ded2d3f1f5414d99960",
+        "contentDigest": "2324a0e3fbf324809192586703582585",
         "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "jsonName": "offline-plugin-app-shell-fallback-a30",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "context": {},
+      "pluginCreator___NODE": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "pluginCreatorId": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "13299dac82924d1e758ef3ddfbfc4f7a",
+        "description": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
         "owner": "internal-data-bridge"
       }
     },
@@ -827,7 +988,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "ebc4358f3c0530f1490b8a1fe28d0f81"
+    "PLUGINS_HASH": "fd808dda121fc9c331c7e05d7c8edb6b"
   },
   "componentDataDependencies": {
     "nodes": {},
@@ -842,10 +1003,6 @@
     "success-ca5": "398/path---success-ca-5-7fb-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
-    "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js": {
-      "query": "",
-      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/.cache/dev-404-page.js"
-    },
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/404.js"
@@ -857,6 +1014,10 @@
     "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js": {
       "query": "",
       "componentPath": "/Users/nathangriffen/GitHub/the_Wall/src/pages/success.js"
+    },
+    "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-offline/app-shell.js"
     }
   },
   "staticQueryComponents": {}
