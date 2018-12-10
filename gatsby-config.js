@@ -42,7 +42,6 @@ module.exports = {
           "UA-7394297-18", // Google Analytics / GA
         ],
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
         },
         pluginConfig: {
