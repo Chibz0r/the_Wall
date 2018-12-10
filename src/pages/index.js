@@ -114,6 +114,7 @@ class HomeIndex extends React.Component {
                 <Helmet>
                         <title>{siteTitle}</title>
                         <meta name="description" content={siteDescription} />
+                        <meta name="google-site-verification" content="v47_NTcM7O1IOLIZBBPObxWa82rFOL5_83FzHXPsbJg" />
                 </Helmet>
 
                 <div id="main">
