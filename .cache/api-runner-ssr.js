@@ -10,6 +10,12 @@ var plugins = [{
     },{
       plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"great-wall-of-yarmouth","short_name":"Great wall","start_url":"/","background_color":"#1f1815","theme_color":"#1f1815","display":"minimal-ui","icon":"src/assets/images/website-icon.png"},
+    },{
+      plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/nathangriffen/GitHub/the_Wall/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"exclude":["/success"]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

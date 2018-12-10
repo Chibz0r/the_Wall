@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "The Great Wall of Yarmouth - by Paul Patterson",
     author: "nathanGriffen",
-    description: "The Great Wall of Yarmouth written and illustrated by Paul Patterson"
+    description: "The Great Wall of Yarmouth written and illustrated by Paul Patterson",
+    siteUrl: 'https://www.thegreatwallofyarmouth.co.uk',
   },
   plugins: [
     'gatsby-plugin-google-analytics',
@@ -13,6 +14,15 @@ module.exports = {
         head: false,
         anonymize: true,
         respectDNT: true,
+      },
+    },
+    'gatsby-plugin-robots-txt',
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://www.thegreatwallofyarmouth.co.uk',
+        sitemap: 'https://www.thegreatwallofyarmouth.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       },
     },
     'gatsby-plugin-react-helmet',
@@ -29,6 +39,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline',  
+    'gatsby-plugin-offline',
+    'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/success"],
+      },
+    },
   ],
 }
