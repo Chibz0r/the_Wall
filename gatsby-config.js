@@ -6,25 +6,6 @@ module.exports = {
     siteUrl: 'https://www.thegreatwallofyarmouth.co.uk',
   },
   plugins: [
-    'gatsby-plugin-google-analytics',
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-7394297-18",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-      },
-    },
-    'gatsby-plugin-robots-txt',
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: 'https://www.thegreatwallofyarmouth.co.uk',
-        sitemap: 'https://www.thegreatwallofyarmouth.co.uk/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -40,12 +21,35 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: ["/success"],
       },
     },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://www.thegreatwallofyarmouth.co.uk',
+        sitemap: 'https://www.thegreatwallofyarmouth.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-7394297-18", // Google Analytics / GA
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+        },
+      },
+    },  
   ],
 }
