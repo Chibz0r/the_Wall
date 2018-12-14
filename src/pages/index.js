@@ -232,7 +232,7 @@ class HomeIndex extends React.Component {
                                     </form>
                             </div>
                             <div className="12u">
-                                <p className="align-right"><em>Internation postage availble upon request please email <a href="mailto:paul@atecdesign.co.uk">paul@atecdesign.co.uk</a></em></p>
+                                <p className="align-right"><em>International postage availble upon request please email <a href="mailto:paul@atecdesign.co.uk">paul@atecdesign.co.uk</a></em></p>
                             </div>
                         </div>
                     </section>
